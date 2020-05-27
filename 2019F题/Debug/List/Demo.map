@@ -1,0 +1,433 @@
+###############################################################################
+#                                                                             #
+# IAR ARM ELF Linker V5.11.0.50622/W32                  10/Aug/2019  19:55:09 #
+# Copyright 2007 IAR Systems. All rights reserved.                            #
+#                                                                             #
+#    Output file  =  C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\Exe\Demo #
+#                    .out                                                     #
+#    Map file     =  C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\List\Dem #
+#                    o.map                                                    #
+#    Command line =  "C:\Program Files (x86)\IAR Systems\Embedded Workbench   #
+#                    5.0 Kickstart\ARM\lib\Luminary\driverlib.a"              #
+#                    C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\Obj\FDC2 #
+#                    214.o C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\Ob #
+#                    j\KEY.o C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\ #
+#                    Obj\SoftI2C.o C:\Users\Snuggle\Desktop\New'\545645\New'\ #
+#                    Debug\Obj\SoftI2C_CFG.o C:\Users\Snuggle\Desktop\New'\54 #
+#                    5645\New'\Debug\Obj\ZLG7290.o                            #
+#                    C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\Obj\buzz #
+#                    er.o C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\Obj #
+#                    \lcd_driver.o C:\Users\Snuggle\Desktop\New'\545645\New'\ #
+#                    Debug\Obj\main.o C:\Users\Snuggle\Desktop\New'\545645\Ne #
+#                    w'\Debug\Obj\startup_ewarm.o                             #
+#                    C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\Obj\syst #
+#                    emInit.o C:\Users\Snuggle\Desktop\New'\545645\New'\Debug #
+#                    \Obj\uartGetPut.o -o C:\Users\Snuggle\Desktop\New'\54564 #
+#                    5\New'\Debug\Exe\Demo.out --map                          #
+#                    C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\List\Dem #
+#                    o.map --config "C:\Program Files (x86)\IAR               #
+#                    Systems\Embedded Workbench 5.0                           #
+#                    Kickstart\ARM\config\Luminary\LM3S.icf" --semihosting    #
+#                    --entry __iar_program_start                              #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__endian      = little
+__thumb_aware = enabled
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at start of [mem:0x0-mem:0x3ffff] { ro section .intvec };
+"P1":  place in [from mem:0x0 to mem:0x3ffff] { ro };
+"P2":  place in [from mem:0x20000000 to mem:0x2000ffff] { rw, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x100
+  .intvec            const    0x00000000   0x100  startup_ewarm.o [1]
+                            - 0x00000100   0x100
+
+"P1":                                     0x3b68
+  .text              ro code  0x00000100   0xeca  xprintffull.o [3]
+  .text              ro code  0x00000fcc   0x9e4  main.o [1]
+  .text              ro code  0x000019b0   0x558  FDC2214.o [1]
+  .text              ro code  0x00001f08   0x324  sysctl.o [4]
+  .text              ro code  0x0000222c   0x288  lcd_driver.o [1]
+  .text              ro code  0x000024b4   0x288  DblDiv.o [5]
+  .text              ro code  0x0000273c   0x234  gpio.o [4]
+  .text              ro code  0x00002970   0x1bc  ABImemcpy.o [5]
+  .text              ro code  0x00002b2c   0x1a2  DblMul.o [5]
+  .text              ro code  0x00002cd0   0x180  DblSub.o [5]
+  .text              ro code  0x00002e50   0x164  SoftI2C.o [1]
+  .text              ro code  0x00002fb4   0x114  xdscale.o [3]
+  .text              ro code  0x000030c8    0xe8  DblAdd.o [5]
+  .text              ro code  0x000031b0    0xd0  I64DivMod.o [5]
+  .text              ro code  0x00003280    0xbc  buzzer.o [1]
+  .text              ro code  0x0000333c    0xb8  SoftI2C_CFG.o [1]
+  .text              ro code  0x000033f4    0xaa  xdnorm.o [3]
+  .text              ro code  0x000034a0    0x90  timer.o [4]
+  .text              ro code  0x00003530    0x88  interrupt.o [4]
+  .text              ro code  0x000035b8    0x78  uart.o [4]
+  .text              ro code  0x00003630    0x6c  uartGetPut.o [1]
+  .rodata            const    0x0000369c    0x5c  sysctl.o [4]
+  .text              ro code  0x000036f8    0x58  systemInit.o [1]
+  .text              ro code  0x00003750    0x56  DblToI32.o [5]
+  .text              ro code  0x000037a8    0x3c  KEY.o [1]
+  .text              ro code  0x000037e4    0x38  DblSubNrml.o [5]
+  .text              ro code  0x0000381c    0x34  sprintf.o [3]
+  .text              ro code  0x00003850    0x30  DblCmpGe.o [5]
+  .text              ro code  0x00003880    0x30  DblCmpLe.o [5]
+  .text              ro code  0x000038b0    0x2e  I32ToDbl.o [5]
+  .text              ro code  0x000038e0    0x24  data_init.o [5]
+  .text              ro code  0x00003904    0x22  DblCmpEq.o [5]
+  .iar.init_table    const    0x00003928    0x20  - Linker created -
+  .rodata            const    0x00003948    0x1c  main.o [1]
+  .rodata            const    0x00003964    0x1c  main.o [1]
+  .rodata            const    0x00003980    0x1c  main.o [1]
+  .rodata            const    0x0000399c    0x1c  main.o [1]
+  .rodata            const    0x000039b8    0x18  main.o [1]
+  .text              ro code  0x000039d0    0x18  cmain.o [5]
+  .text              ro code  0x000039e8    0x18  memchr.o [5]
+  .text              ro code  0x00003a00    0x16  div.o [3]
+  .rodata            const    0x00003a18    0x14  main.o [1]
+  .rodata            const    0x00003a2c    0x14  main.o [1]
+  .rodata            const    0x00003a40    0x14  main.o [1]
+  .rodata            const    0x00003a54    0x14  main.o [1]
+  .rodata            const    0x00003a68    0x14  main.o [1]
+  .rodata            const    0x00003a7c    0x14  main.o [1]
+  .rodata            const    0x00003a90    0x14  main.o [1]
+  .rodata            const    0x00003aa4    0x14  main.o [1]
+  .rodata            const    0x00003ab8    0x14  main.o [1]
+  .rodata            const    0x00003acc    0x14  main.o [1]
+  .rodata            const    0x00003ae0    0x14  main.o [1]
+  .rodata            const    0x00003af4    0x14  main.o [1]
+  .rodata            const    0x00003b08    0x14  main.o [1]
+  .text              ro code  0x00003b1c    0x14  I32DivMod.o [5]
+  .text              ro code  0x00003b30    0x14  strchr.o [5]
+  CODE               ro code  0x00003b44    0x14  cpu.o [4]
+  .rodata            const    0x00003b58    0x10  main.o [1]
+  .rodata            const    0x00003b68    0x10  main.o [1]
+  .rodata            const    0x00003b78    0x10  main.o [1]
+  .rodata            const    0x00003b88    0x10  main.o [1]
+  .rodata            const    0x00003b98    0x10  main.o [1]
+  .text              ro code  0x00003ba8    0x10  exit.o [6]
+  .text              ro code  0x00003bb8    0x10  copy_init.o [5]
+  .text              ro code  0x00003bc8     0xe  strlen.o [5]
+  .text              ro code  0x00003bd8     0xe  zero_init.o [5]
+  .rodata            const    0x00003be8     0xc  main.o [1]
+  .rodata            const    0x00003bf4     0xc  main.o [1]
+  .rodata            const    0x00003c00     0xc  main.o [1]
+  .rodata            const    0x00003c0c     0xc  main.o [1]
+  .rodata            const    0x00003c18     0xc  sysctl.o [4]
+  .text              ro code  0x00003c24     0xa  startup_ewarm.o [1]
+  .text              ro code  0x00003c30     0xa  xsprout.o [3]
+  .text              ro code  0x00003c3c     0xa  cexit.o [5]
+  .rodata            const    0x00003c48     0x8  xprintffull.o [3]
+  .text              ro code  0x00003c50     0x8  exit.o [3]
+  .text              ro code  0x00003c58     0x4  low_level_init.o [3]
+  .text              ro code  0x00003c5c     0x2  IntDivZer.o [5]
+  .text              ro code  0x00003c60     0x2  I64DivZer.o [5]
+  Initializer bytes  ro data  0x00003c64     0x4  <for P2-1>
+                            - 0x00003c68  0x3b68
+
+"P2", part 1 of 3:                         0x400
+  .noinit            uninit   0x20000000   0x400  startup_ewarm.o [1]
+                            - 0x20000400   0x400
+
+"P2", part 2 of 3:                        0x130c
+  .bss               zero     0x20000400   0xfa0  main.o [1]
+  .bss               zero     0x200013a0   0x320  main.o [1]
+  .bss               zero     0x200016c0    0x20  FDC2214.o [1]
+  .bss               zero     0x200016e0     0xc  main.o [1]
+  .bss               zero     0x200016ec     0x4  FDC2214.o [1]
+  .bss               zero     0x200016f0     0x4  main.o [1]
+  .bss               zero     0x200016f4     0x4  main.o [1]
+  .bss               zero     0x200016f8     0x4  main.o [1]
+  .bss               zero     0x200016fc     0x4  main.o [1]
+  .bss               zero     0x20001700     0x4  main.o [1]
+  .bss               zero     0x20001704     0x4  main.o [1]
+  .bss               zero     0x20001708     0x4  main.o [1]
+                            - 0x2000170c  0x130c
+
+"P2", part 3 of 3:                           0x4
+  P2-1                        0x2000170c     0x4  <Init block>
+    .data            inited   0x2000170c     0x4  systemInit.o [1]
+                            - 0x20001710     0x4
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\Obj: [1]
+    FDC2214.o           1 368                36
+    KEY.o                  60
+    SoftI2C.o             356
+    SoftI2C_CFG.o         184
+    buzzer.o              188
+    lcd_driver.o          648
+    main.o              2 532      524    4 840
+    startup_ewarm.o        10      256    1 024
+    systemInit.o           88        4        4
+    uartGetPut.o          108
+    -------------------------------------------
+    Total:              5 542      784    5 904
+
+command line: [2]
+    -------------------------------------------
+    Total:
+
+dl7M_tl_in.a: [3]
+    div.o                  22
+    exit.o                  8
+    low_level_init.o        4
+    sprintf.o              52
+    xdnorm.o              170
+    xdscale.o             276
+    xprintffull.o       3 786        8
+    xsprout.o              10
+    -------------------------------------------
+    Total:              4 328        8
+
+driverlib.a: [4]
+    cpu.o                  20
+    gpio.o                564
+    interrupt.o           136
+    sysctl.o              804      104
+    timer.o               144
+    uart.o                120
+    -------------------------------------------
+    Total:              1 788      104
+
+rt7M_tl.a: [5]
+    ABImemcpy.o           444
+    DblAdd.o              232
+    DblCmpEq.o             34
+    DblCmpGe.o             48
+    DblCmpLe.o             48
+    DblDiv.o              648
+    DblMul.o              418
+    DblSub.o              384
+    DblSubNrml.o           56
+    DblToI32.o             86
+    I32DivMod.o            20
+    I32ToDbl.o             46
+    I64DivMod.o           208
+    I64DivZer.o             2
+    IntDivZer.o             2
+    cexit.o                10
+    cmain.o                24
+    copy_init.o            16
+    data_init.o            36
+    memchr.o               24
+    strchr.o               20
+    strlen.o               14
+    zero_init.o            14
+    -------------------------------------------
+    Total:              2 834
+
+shb_l.a: [6]
+    exit.o                 16
+    -------------------------------------------
+    Total:                 16
+
+    Gaps                   18        8
+    Linker created                  32
+-----------------------------------------------
+    Grand Total:       14 526      936    5 904
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+CHx_FIN_SEL             0x200016ec    0x4  Data  Gb  FDC2214.o [1]
+CPUcpsid                0x00003b45         Code  Gb  cpu.o [4]
+CPUcpsie                0x00003b4d         Code  Gb  cpu.o [4]
+CPUwfi                  0x00003b55         Code  Gb  cpu.o [4]
+Data_Mar                0x200013a0  0x320  Data  Gb  main.o [1]
+Data_N                  0x00001739  0x1e8  Code  Gb  main.o [1]
+FDC2214_GetChannelData  0x00001a71   0xbe  Code  Gb  FDC2214.o [1]
+FDC2214_Init            0x00001e79   0x90  Code  Gb  FDC2214.o [1]
+FDC2214_Read16          0x00001a01   0x6e  Code  Gb  FDC2214.o [1]
+FDC2214_Reset           0x00001e05   0x12  Code  Gb  FDC2214.o [1]
+FDC2214_SetChannelClock
+                        0x00001be9   0x94  Code  Gb  FDC2214.o [1]
+FDC2214_SetClockSource  0x00001d55   0x38  Code  Gb  FDC2214.o [1]
+FDC2214_SetCurrentMode  0x00001d1d   0x38  Code  Gb  FDC2214.o [1]
+FDC2214_SetDriveCurrent
+                        0x00001e19   0x5e  Code  Gb  FDC2214.o [1]
+FDC2214_SetHighCurrentMode
+                        0x00001d8d   0x38  Code  Gb  FDC2214.o [1]
+FDC2214_SetINTB         0x00001c85   0x60  Code  Gb  FDC2214.o [1]
+FDC2214_SetMUX_CONFIG   0x00001dc5   0x40  Code  Gb  FDC2214.o [1]
+FDC2214_SetRcount       0x00001b31   0x60  Code  Gb  FDC2214.o [1]
+FDC2214_SetSettleCount  0x00001b91   0x56  Code  Gb  FDC2214.o [1]
+FDC2214_SetSleepMode    0x00001ce5   0x38  Code  Gb  FDC2214.o [1]
+FDC2214_Write16         0x000019b1   0x50  Code  Gb  FDC2214.o [1]
+FaultISR                0x00003c29    0x2  Code  Lc  startup_ewarm.o [1]
+GPIODirModeSet          0x0000273d   0x4c  Code  Gb  gpio.o [4]
+GPIOPadConfigSet        0x00002789  0x11e  Code  Gb  gpio.o [4]
+GPIOPinRead             0x000028a9    0x8  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOInput    0x000028bd   0x24  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOOutput   0x000028e1   0x24  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOOutputOD
+                        0x00002905   0x24  Code  Gb  gpio.o [4]
+GPIOPinTypeTimer        0x00002929   0x24  Code  Gb  gpio.o [4]
+GPIOPinTypeUART         0x0000294d   0x24  Code  Gb  gpio.o [4]
+GPIOPinWrite            0x000028b1    0xa  Code  Gb  gpio.o [4]
+GUI_ClearSCR            0x000023e1   0xd4  Code  Gb  lcd_driver.o [1]
+I2C_GetAck              0x00002f29   0x3e  Code  Gb  SoftI2C.o [1]
+I2C_Init                0x00002e51   0x2a  Code  Gb  SoftI2C.o [1]
+I2C_PinEnableSCL        0x0000334d    0xc  Code  Gb  SoftI2C_CFG.o [1]
+I2C_PinEnableSDA        0x0000338d    0xc  Code  Gb  SoftI2C_CFG.o [1]
+I2C_PinReadSDA          0x000033e1   0x14  Code  Gb  SoftI2C_CFG.o [1]
+I2C_PinTypeInSDA        0x0000339d   0x10  Code  Gb  SoftI2C_CFG.o [1]
+I2C_PinTypeOutSCL       0x00003359   0x10  Code  Gb  SoftI2C_CFG.o [1]
+I2C_PinTypeOutSDA       0x000033ad   0x10  Code  Gb  SoftI2C_CFG.o [1]
+I2C_PinWriteSCL         0x00003369   0x24  Code  Gb  SoftI2C_CFG.o [1]
+I2C_PinWriteSDA         0x000033bd   0x24  Code  Gb  SoftI2C_CFG.o [1]
+I2C_PutAck              0x00002f69   0x26  Code  Gb  SoftI2C.o [1]
+I2C_Read                0x00002ee9   0x3e  Code  Gb  SoftI2C.o [1]
+I2C_Start               0x00002e7d   0x2e  Code  Gb  SoftI2C.o [1]
+I2C_Stop                0x00002f91   0x24  Code  Gb  SoftI2C.o [1]
+I2C_TimeDelay           0x0000333d    0xe  Code  Gb  SoftI2C_CFG.o [1]
+I2C_Write               0x00002ead   0x3c  Code  Gb  SoftI2C.o [1]
+IntDefaultHandler       0x00003c2d    0x2  Code  Lc  startup_ewarm.o [1]
+IntEnable               0x0000353d   0x74  Code  Gb  interrupt.o [4]
+IntMasterEnable         0x00003531    0xc  Code  Gb  interrupt.o [4]
+KEY_Init                0x000037a9   0x34  Code  Gb  KEY.o [1]
+NmiSR                   0x00003c25    0x2  Code  Lc  startup_ewarm.o [1]
+Real_Num                0x20001704    0x4  Data  Gb  main.o [1]
+Region$$Table$$Base     0x00003928         Data  Gb  - Linker created -
+Region$$Table$$Limit    0x00003948         Data  Gb  - Linker created -
+Step_All                0x20001708    0x4  Data  Gb  main.o [1]
+SysCtlClockGet          0x000020e1  0x14c  Code  Gb  sysctl.o [4]
+SysCtlClockSet          0x00001f71  0x170  Code  Gb  sysctl.o [4]
+SysCtlDelay             0x00001f69    0x8  Code  Gb  sysctl.o [4]
+SysCtlLDOSet            0x00001f5d    0x6  Code  Gb  sysctl.o [4]
+SysCtlPeripheralDisable
+                        0x00001f31   0x26  Code  Gb  sysctl.o [4]
+SysCtlPeripheralEnable  0x00001f09   0x26  Code  Gb  sysctl.o [4]
+T1                      0x200016f0    0x4  Data  Gb  main.o [1]
+T2                      0x200016f4    0x4  Data  Gb  main.o [1]
+T3                      0x200016f8    0x4  Data  Gb  main.o [1]
+T4                      0x200016fc    0x4  Data  Gb  main.o [1]
+TheSysClock             0x2000170c    0x4  Data  Gb  systemInit.o [1]
+Time_Init               0x00000fcd   0xb0  Code  Gb  main.o [1]
+Timer0B_ISR             0x00001921   0x90  Code  Gb  main.o [1]
+TimerConfigure          0x000034bd   0x1c  Code  Gb  timer.o [4]
+TimerDisable            0x000034ad    0xc  Code  Gb  timer.o [4]
+TimerEnable             0x000034a1    0xc  Code  Gb  timer.o [4]
+TimerIntClear           0x0000352d    0x4  Code  Gb  timer.o [4]
+TimerIntEnable          0x00003515    0x8  Code  Gb  timer.o [4]
+TimerIntStatus          0x0000351d    0xe  Code  Gb  timer.o [4]
+TimerLoadSet            0x000034ed   0x12  Code  Gb  timer.o [4]
+TimerMatchSet           0x00003501   0x12  Code  Gb  timer.o [4]
+TimerPrescaleSet        0x000034d9   0x12  Code  Gb  timer.o [4]
+UARTCharPut             0x00003625    0xc  Code  Gb  uart.o [4]
+UARTConfigSetExpClk     0x000035b9   0x38  Code  Gb  uart.o [4]
+UARTDisable             0x00003609   0x1c  Code  Gb  uart.o [4]
+UARTEnable              0x000035f1   0x18  Code  Gb  uart.o [4]
+_GenldDefault           0x00000d19  0x278  Code  Lc  xprintffull.o [3]
+_LdtobDefault           0x000008ad  0x46c  Code  Lc  xprintffull.o [3]
+_LitobDefault           0x000007ad  0x100  Code  Lc  xprintffull.o [3]
+_Printf                 0x00000101  0x6ac  Code  Gb  xprintffull.o [3]
+_PutcharsDefault        0x00000f91   0x3a  Code  Lc  xprintffull.o [3]
+_SProut                 0x00003c31    0xa  Code  Gb  xsprout.o [3]
+__aeabi_cdcmpeq         0x00003905         Code  Gb  DblCmpEq.o [5]
+__aeabi_cdcmple         0x00003881         Code  Gb  DblCmpLe.o [5]
+__aeabi_cdrcmple        0x00003851         Code  Gb  DblCmpGe.o [5]
+__aeabi_d2iz            0x00003751         Code  Gb  DblToI32.o [5]
+__aeabi_d2uiz           0x0000377d         Code  Gb  DblToI32.o [5]
+__aeabi_dadd            0x000030c9         Code  Gb  DblAdd.o [5]
+__aeabi_ddiv            0x000024b5         Code  Gb  DblDiv.o [5]
+__aeabi_dmul            0x00002b2d         Code  Gb  DblMul.o [5]
+__aeabi_dsub            0x00002cd1         Code  Gb  DblSub.o [5]
+__aeabi_i2d             0x000038b1         Code  Gb  I32ToDbl.o [5]
+__aeabi_idiv0           0x00003c5d         Code  Gb  IntDivZer.o [5]
+__aeabi_ldiv0           0x00003c61         Code  Gb  I64DivZer.o [5]
+__aeabi_ldivmod         0x000031e5         Code  Gb  I64DivMod.o [5]
+__aeabi_memcpy          0x00002971         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x0000298b         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x0000298b         Code  Gb  ABImemcpy.o [5]
+__aeabi_ui2d            0x000038c5         Code  Gb  I32ToDbl.o [5]
+__aeabi_uidiv           0x00003b1d         Code  Gb  I32DivMod.o [5]
+__aeabi_uidivmod        0x00003b1d         Code  Gb  I32DivMod.o [5]
+__aeabi_uldivmod        0x000031f9         Code  Gb  I64DivMod.o [5]
+__exit                  0x00003ba9   0x10  Code  Gb  exit.o [6]
+__iar_Dnorm             0x000033f5   0xaa  Code  Gb  xdnorm.o [3]
+__iar_Dscale            0x00002fb5  0x114  Code  Gb  xdscale.o [3]
+__iar_Memchr            0x000039e9         Code  Gb  memchr.o [5]
+__iar_Strchr            0x00003b31         Code  Gb  strchr.o [5]
+__iar_SubNrmlX          0x000037e5         Code  Gb  DblSubNrml.o [5]
+__iar_SubNrmlY          0x00003801         Code  Gb  DblSubNrml.o [5]
+__iar_copy_init         0x00003bb9   0x10  Code  Gb  copy_init.o [5]
+__iar_d2uiz             0x00003787         Code  Gb  DblToI32.o [5]
+__iar_dadd              0x000030db         Code  Gb  DblAdd.o [5]
+__iar_data_init         0x000038e1   0x24  Code  Gb  data_init.o [5]
+__iar_dsub              0x00002ce3         Code  Gb  DblSub.o [5]
+__iar_dsubStart         0x00002cf7         Code  Gb  DblSub.o [5]
+__iar_program_start     0x000039d1         Code  Gb  cmain.o [5]
+__iar_ui2d              0x000038c7         Code  Gb  I32ToDbl.o [5]
+__iar_zero_init         0x00003bd9    0xe  Code  Gb  zero_init.o [5]
+__low_level_init        0x00003c59    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000  0x100  Data  Gb  startup_ewarm.o [1]
+_exit                   0x00003c3d         Code  Gb  cexit.o [5]
+_main                   0x000039e3         Code  Gb  cmain.o [5]
+a                       0x200016e0    0xc  Data  Gb  main.o [1]
+buzzerInit              0x00003281   0x30  Code  Gb  buzzer.o [1]
+buzzerQuiet             0x00003311   0x22  Code  Gb  buzzer.o [1]
+buzzerSound             0x000032b1   0x60  Code  Gb  buzzer.o [1]
+clockInit               0x00003729   0x28  Code  Gb  systemInit.o [1]
+comPare                 0x20000400  0xfa0  Data  Gb  main.o [1]
+disp_line               0x00002389   0x58  Code  Gb  lcd_driver.o [1]
+div                     0x00003a01   0x16  Code  Gb  div.o [3]
+exit                    0x00003c51    0x8  Code  Gb  exit.o [3]
+fREFx                   0x200016c0   0x20  Data  Gb  FDC2214.o [1]
+g_pulRCGCRegs           0x00003c18    0xc  Data  Lc  sysctl.o [4]
+g_pulXtals              0x0000369c   0x5c  Data  Lc  sysctl.o [4]
+init_io                 0x00002339   0x24  Code  Gb  lcd_driver.o [1]
+init_lcd                0x00002361   0x28  Code  Gb  lcd_driver.o [1]
+jtagWait                0x000036f9   0x30  Code  Gb  systemInit.o [1]
+k                       0x20001700    0x4  Data  Gb  main.o [1]
+main                    0x00001089  0x6b0  Code  Gb  main.o [1]
+memchr                  0x000039e9         Code  Gb  memchr.o [5]
+pulStack                0x20000000  0x400  Data  Lc  startup_ewarm.o [1]
+sdelay                  0x0000222d    0xa  Code  Gb  lcd_driver.o [1]
+send_data               0x00002239   0x68  Code  Gb  lcd_driver.o [1]
+sprintf                 0x0000381d   0x34  Code  Gb  sprintf.o [3]
+strchr                  0x00003b31         Code  Gb  strchr.o [5]
+strlen                  0x00003bc9         Code  Gb  strlen.o [5]
+uartInit                0x00003631   0x40  Code  Gb  uartGetPut.o [1]
+uartPutc                0x00003671   0x10  Code  Gb  uartGetPut.o [1]
+uartPuts                0x00003681   0x16  Code  Gb  uartGetPut.o [1]
+write_comm              0x000022ed   0x4c  Code  Gb  lcd_driver.o [1]
+write_data              0x000022a1   0x4c  Code  Gb  lcd_driver.o [1]
+
+
+[1] = C:\Users\Snuggle\Desktop\New'\545645\New'\Debug\Obj
+[2] = command line
+[3] = dl7M_tl_in.a
+[4] = driverlib.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  14 526 bytes of readonly  code memory
+     936 bytes of readonly  data memory
+   5 904 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

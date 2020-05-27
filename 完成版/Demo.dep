@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>572880871</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\clock.c</file>
+      <file>$PROJ_DIR$\systemInit.h</file>
+      <file>$PROJ_DIR$\ZLG7290.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\UART_GetPut.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.o</file>
+      <file>$PROJ_DIR$\LED.C</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\pin_map.h</file>
+      <file>$PROJ_DIR$\LM3S_I2CM.h</file>
+      <file>$PROJ_DIR$\Debug\List\Demo.map</file>
+      <file>$PROJ_DIR$\KEY.H</file>
+      <file>$PROJ_DIR$\Debug\Obj\ZLG7290.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\clock.o</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\interrupt.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\clock.h</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\hw_ints.h</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\gpio.h</file>
+      <file>$PROJ_DIR$\ZLG7290.c</file>
+      <file>$PROJ_DIR$\LM3S_I2CM.c</file>
+      <file>$PROJ_DIR$\LED.H</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\uart.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\SoftI2C_CFG.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\uartGetPut.pbi</file>
+      <file>$PROJ_DIR$\..\..\i2c-pa6pa7  1\i2c-pa6pa7  1\i2c-pa6pa7\PCF8563&#x4Fee;&#x6539;\clock.c</file>
+      <file>$TOOLKIT_DIR$\config\Luminary\LM3S.icf</file>
+      <file>$PROJ_DIR$\lcd_driver.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_driver.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\hw_gpio.h</file>
+      <file>$PROJ_DIR$\18b20.c</file>
+      <file>$TOOLKIT_DIR$\inc\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\EPROM.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\systemInit.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\xmtx.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\key.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\clock.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED.o</file>
+      <file>$PROJ_DIR$\UART_GetPut.C</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\uartGetPut.h</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\adc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\SoftI2C.o</file>
+      <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\stdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Demo.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_driver.o</file>
+      <file>$PROJ_DIR$\eprom.h</file>
+      <file>$PROJ_DIR$\Buzzer.H</file>
+      <file>$PROJ_DIR$\..\..\i2c-pa6pa7  1\i2c-pa6pa7  1\i2c-pa6pa7\PCF8563&#x4Fee;&#x6539;\SoftI2C.h</file>
+      <file>$TOOLKIT_DIR$\inc\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\xlocale_c.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\EPROM.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\LM3S_I2CM.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ZLG7290.pbi</file>
+      <file>$PROJ_DIR$\SoftI2C_CFG.H</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\hw_memmap.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\Demo.out</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\18b20.o</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\i2c.h</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\hw_timer.h</file>
+      <file>$PROJ_DIR$\SoftI2C.H</file>
+      <file>$PROJ_DIR$\Debug\Obj\key.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\hw_adc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Buzzer.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\Buzzer.C</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\UART_GetPut.pbi</file>
+      <file>$PROJ_DIR$\LM3S1138_PinMap.H</file>
+      <file>$PROJ_DIR$\18b20.h</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\timer.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tl_in.a</file>
+      <file>$TOOLKIT_DIR$\inc\wchar.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\uartGetPut.o</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Buzzer.o</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\hw_sysctl.h</file>
+      <file>$TOOLKIT_DIR$\inc\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\hw_uart.h</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\hw_types.h</file>
+      <file>$PROJ_DIR$\UART_GetPut.H</file>
+      <file>$PROJ_DIR$\Debug\Obj\LM3S_I2CM.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SoftI2C.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SoftI2C_CFG.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\Demo.bin</file>
+      <file>$TOOLKIT_DIR$\inc\Luminary\sysctl.h</file>
+      <file>$PROJ_DIR$\..\..\i2c-pa6pa7  1\i2c-pa6pa7  1\i2c-pa6pa7\PCF8563&#x4Fee;&#x6539;\clock.h</file>
+      <file>$PROJ_DIR$\lcd_driver.c</file>
+      <file>$PROJ_DIR$\SoftI2C.C</file>
+      <file>$PROJ_DIR$\KEY.C</file>
+      <file>$PROJ_DIR$\systemInit.c</file>
+      <file>$PROJ_DIR$\uartGetPut.c</file>
+      <file>$PROJ_DIR$\EPROM.C</file>
+      <file>$PROJ_DIR$\Debug\Obj\18b20.pbi</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\startup_ewarm.c</file>
+      <file>$TOOLKIT_DIR$\inc\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\lib\Luminary\driverlib.a</file>
+      <file>$TOOLKIT_DIR$\inc\xtls.h</file>
+      <file>$PROJ_DIR$\SoftI2C_CFG.C</file>
+      <file>$PROJ_DIR$\Debug\Obj\systemInit.o</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\clock.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66 14 88 60 85 94 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66 14 88 60 85 94 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LED.C</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 71</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 19 88 60 85 28 94 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 88 60 85 28 94 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 61 8</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ZLG7290.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66 2 49 14 88 60 85 94 16 28 30 68 86 39 72 62 59 34 44 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66 2 49 14 88 60 85 94 16 28 30 68 86 39 62 59 34 44 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LM3S_I2CM.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 88 60 64 94 15 12 16 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\i2c-pa6pa7  1\i2c-pa6pa7  1\i2c-pa6pa7\PCF8563&#x4Fee;&#x6539;\clock.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50 95 88 60 85 94 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\18b20.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 88 60 85 28 94 16 77</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88 60 85 28 94 16 77</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\UART_GetPut.C</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 89 76 88 60 85 28 87 94 16 20 51 68 86 39 72 62 59 34 105 107 33 55 44 40 52 80</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 89 76 88 60 85 28 87 94 16 20 51 68 86 39 62 59 34 105 107 33 55 44 40 52 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\Demo.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 91 22 67 27 13 58 32 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Demo.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 8</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 93</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 25 106 43 92 35 47 83 4 109 81 82 21 79</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Buzzer.C</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49 76 88 60 85 28 65 94 16 78</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49 76 88 60 85 28 65 94 16 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lcd_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 88 60 85 28 69 94 16 42 45 68 86 39 72 62 59 34 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 88 60 85 28 69 94 16 42 45 68 86 39 62 59 34 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SoftI2C.C</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\KEY.C</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 26 88 60 85 28 94 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 88 60 85 28 94 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\systemInit.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 1 88 60 15 12 94 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 88 60 15 12 94 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\uartGetPut.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 88 60 94 16 20 51 68 86 39 72 62 59 34 105 107 33 55 44 40 52 80 1 15 12 30 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 88 60 94 16 20 51 68 86 39 62 59 34 105 107 33 55 44 40 52 80 1 15 12 30 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\EPROM.C</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66 57 48 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66 57 48 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 1 88 60 15 12 94 16 20 41 78 26 9 66 45 68 86 39 72 62 59 34 44 76</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 88 60 15 12 94 16 20 41 78 26 9 66 45 68 86 39 62 59 34 44 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\startup_ewarm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SoftI2C_CFG.C</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 57 88 60 85 94 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 88 60 85 94 16</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
